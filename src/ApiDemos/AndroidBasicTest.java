@@ -41,15 +41,15 @@ public class AndroidBasicTest {
 		//If browser is empty, use Appium default browser
 		capabilities.setCapability(CapabilityType.BROWSER_NAME, "");
 		//Support unicode
-		capabilities.setCapability("unicodeKeyboard", "True");
-		capabilities.setCapability("resetKeyboard", "True");
+		capabilities.setCapability("unicodeKeyboard", true);
+		capabilities.setCapability("resetKeyboard", true);
 		//Setup platform and device and android version
 		capabilities.setCapability("platformName", "Android");
 		capabilities.setCapability("deviceName", "Android Emulator");
-		capabilities.setCapability("platformVersion", "4.4.2");
+		capabilities.setCapability("platformVersion", "9");
 		//Get app absolute local path
 		capabilities.setCapability("app", app.getAbsolutePath());
-        driver = new AndroidDriver<WebElement>(new URL("https://0.0.0.0:4723/wd/hub"), capabilities);
+        driver = new AndroidDriver<WebElement>(new URL("http://0.0.0.0:4723/wd/hub"), capabilities);
         driver.manage().timeouts().implicitlyWait(80, TimeUnit.SECONDS);
     }
 
