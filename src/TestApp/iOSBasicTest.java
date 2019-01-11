@@ -25,7 +25,7 @@ public class iOSBasicTest {
     public void setUp() throws IOException {
         File classpathRoot = new File(System.getProperty("user.dir"));
         File appDir = new File(classpathRoot, "./app");
-        File app = new File(appDir.getCanonicalPath(), "TestApp.app.zip");
+        File app = new File(appDir.getCanonicalPath(), "TestApp.zip");
 
         String deviceName = System.getenv("IOS_DEVICE_NAME");
         String platformVersion = System.getenv("IOS_PLATFORM_VERSION");
