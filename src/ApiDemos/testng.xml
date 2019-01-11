@@ -1,9 +1,0 @@
-<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
-  
-<suite name="ApiDemos Android Basic Test Automation" verbose="1" >
-  <test name="ApiDemos Android Application Test Cases" >
-    <classes>
-    	<class name="ApiDemos.AndroidBasicTest" />
-    </classes>
-  </test>
-</suite>
